@@ -148,6 +148,7 @@ const showPosts = (posts) => {
     const div = createPost(post);
     productsContainer.appendChild(div);
   });
+  
 };
 
 const displayLikedPosts = () => {
