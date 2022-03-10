@@ -38,12 +38,15 @@ const switchTab = (id) => {
     document.getElementById("liked").style.display = "none";
     document.getElementById("reported").style.display = "none";
   } else if (id === "liked") {
+    document.getElementById("liked").innerText = "";
     document.getElementById("liked").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("reported").style.display = "none";
 
     displayLikedPosts();
+    // document.getElementById("liked").style.display = "none";
   } else {
+    document.getElementById("reported").innerText = "";
     document.getElementById("reported").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("liked").style.display = "none";
